@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>callback</artifactId>
+    <artifactId>chain</artifactId>
     <packaging>jar</packaging>
 
-    <name>callback</name>
+    <name>chain</name>
     <url>http://maven.apache.org</url>
 
     <properties>

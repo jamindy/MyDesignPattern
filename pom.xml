@@ -14,7 +14,30 @@
         <module>bridge</module>
         <module>builder</module>
         <module>callback</module>
+        <module>chain</module>
+        <module>command</module>
+        <module>composite</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>local repository</name>
+            <url>http://repo.i.mm/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>nexus releases</name>
+            <url>http://repo.i.mm/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>nexus snapshot</name>
+            <url>http://repo.i.mm/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 </project>
