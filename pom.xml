@@ -20,27 +20,21 @@
         <module>decorator</module>
         <module>double-checked-locking</module>
         <module>event-aggregator</module>
+        <module>execute-arround</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <name>local repository</name>
-            <url>http://repo.i.mm/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>nexus releases</name>
-            <url>http://repo.i.mm/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>nexus snapshot</name>
-            <url>http://repo.i.mm/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
+    <build>
+        <plugins>
+            <!-- Tell maven to compile using Java 8 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
