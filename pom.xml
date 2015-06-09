@@ -21,6 +21,7 @@
         <module>double-checked-locking</module>
         <module>event-aggregator</module>
         <module>execute-arround</module>
+        <module>facade</module>
     </modules>
 
     <build>

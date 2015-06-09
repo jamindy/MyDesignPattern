@@ -13,13 +13,15 @@ public class SmartTroll implements Hostile{
 
     @Override
     public void attack() {
-        System.out.println("Being smarter");
+        System.out.println("do something before attack");
         troll.attack();
+        System.out.println("do something after attack");
     }
 
     @Override
     public void fleeBattle() {
-        System.out.println("Being smarter");
+        System.out.println("do something before fleeBattle");
         troll.fleeBattle();
+        System.out.println("do something after fleeBattle");
     }
 }
