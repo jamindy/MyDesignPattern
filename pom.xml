@@ -22,6 +22,8 @@
         <module>event-aggregator</module>
         <module>execute-arround</module>
         <module>facade</module>
+        <module>factory-method</module>
+        <module>factory-iteration</module>
     </modules>
 
     <build>
